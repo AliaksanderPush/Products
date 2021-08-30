@@ -1,15 +1,14 @@
 import React from 'react'
 import './Button.css'
 
-const Button = props => {
+const Button = ({children, product, onClick}) => {
    return (
    <>
     <button
       className = "Button"
-      onClick = {() => props.oncklick(props.index)}
-      product = {props.product}  
-      index = {props.index}
-    >{props.children}</button>
+      onClick = {onClick}
+      product = {product}  
+     >{children}</button>
    </>
 
 

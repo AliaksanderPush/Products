@@ -4,14 +4,9 @@ import Button from './Button';
 import Input from './UI/Input';
 
 class Table extends React.Component {
-   constructor(props) {
-      super(props);
-   }
  
-
-
    render() {
-      const {product, index, oncklick,types,changeHandleCheckbox} =this.props,
+      const {product, index, onClick,changeHandleCheckbox} =this.props,
             typ = "checkbox";
       return (
       <tr>
@@ -21,8 +16,7 @@ class Table extends React.Component {
          <td>{product['quantity']}</td>
          <td>{product['quantity']*product['cost']}</td>
          <td><Button 
-         oncklick = {oncklick}
-         index = {this.props.index}
+         onClick = {onClick}
          product = {product}
          >Удалить 
          </Button>

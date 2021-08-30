@@ -24,7 +24,7 @@ const Form = props => {
       name = "quantityValue"
       onChange = {(e) =>props.addNameProduct(e.target.value, e.target.name)}
       />
-      <Button oncklick = {props.addHandleTable}>Добавить</Button>
+      <Button onClick = {props.addHandleTable}>Добавить</Button>
       </div>
    );
 }
